@@ -35,3 +35,14 @@ if ("IntersectionObserver" in window && !window.matchMedia("(prefers-reduced-mot
   }, { threshold: 0.12 });
   revealItems.forEach((item) => observer.observe(item));
 }
+
+const joinForm = document.querySelector("[data-join-form]");
+
+if (joinForm) {
+  joinForm.addEventListener("submit", (event) => {
+    event.preventDefault();
+    const status = joinForm.querySelector(".join-form__status");
+    if (status) status.textContent = "Introduction saved in this preview. The final submission workflow will be connected before launch.";
+    joinForm.reset();
+  });
+}
