@@ -49,6 +49,23 @@ No server, package installation, or build step is needed for this initial versio
 
 Follow any additional branch naming or review rules maintained by the team repository.
 
+## Shared UI components
+
+The homepage establishes the shared BuildLab design system in `css/style.css`. New pages should reuse the `bl-` prefixed classes so navigation, spacing, buttons, typography, and footer styling stay consistent.
+
+- `bl-container` constrains page content to the shared maximum width.
+- `bl-section` applies the standard responsive section spacing.
+- `bl-kicker` styles uppercase section labels.
+- `bl-button`, `bl-button--primary`, and `bl-button--secondary` provide shared calls to action.
+- `bl-header`, `bl-nav`, and `bl-footer` are the shared site chrome components.
+- Colors, typefaces, container width, and spacing are available as `--bl-*` custom properties in `:root`.
+
+All shared components include mobile styles. Page-specific classes should also use the `bl-` prefix and should avoid changing the shared component rules directly.
+
+See [SHARED-CSS-GUIDE.md](SHARED-CSS-GUIDE.md) for copy-ready examples, page naming conventions, collaboration rules, and the pull-request checklist.
+
+Coding agents and contributors must also read [AGENTS.md](AGENTS.md) before editing the project. It records page ownership, protected files, integration rules, and required verification checks.
+
 ## Scope of this foundation
 
 The homepage is a temporary in-development landing page while the team waits for UI/UX approval. The About, Projects, Team, and Join pages are simple placeholders for their assigned contributors. All five pages use the shared stylesheet and deferred JavaScript file. Final shared components and page-specific content are intentionally left for the team to implement after design approval.

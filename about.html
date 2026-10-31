@@ -1,320 +1,64 @@
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="BuildLab — a community to learn, collaborate, and build real projects.">
-    <title>About BuildLab | Beyond the Code</title>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="About page for the BuildLab community website.">
+    <title>About | BuildLab</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+  </head>
+  <body class="home-page">
+    <a class="skip-link" href="#main-content">Skip to content</a>
 
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
-    <header class="navbar">
-        <a href="#" class="logo">
-            <span class="logo-symbol">✳</span>
-            BuildLab
+    <!-- Shared header: reuse this component and only move the active navigation state. -->
+    <header class="bl-header">
+      <div class="bl-container bl-header__inner">
+        <a class="bl-logo" href="index.html" aria-label="BuildLab home">
+          <img src="assets/images/BUILD LAB LOGO.png" alt="BuildLab">
         </a>
-
-      
-<nav class="nav-links" id="navLinks">
-    <a href="#home">Home</a>
-    <a href="#story">About</a>
-    <a href="#mission">Mission</a>
-    <a href="#story">Our Story</a>
-    <a href="#mission" class="nav-cta">Explore Us</a>
-</nav>
-
-
+        <button class="bl-menu-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation">
+          <span class="sr-only">Open navigation</span><span></span><span></span><span></span>
+        </button>
+        <nav class="bl-nav" id="primary-navigation" aria-label="Primary navigation">
+          <a class="bl-nav__link" href="index.html">Home</a><a class="bl-nav__link is-active" href="about.html" aria-current="page">About</a><a class="bl-nav__link" href="projects.html">Projects</a><a class="bl-nav__link" href="team.html">Team</a><a class="bl-nav__link" href="join.html">Join</a>
+          <a class="bl-button bl-button--nav" href="join.html">Sign In</a>
+        </nav>
+      </div>
     </header>
 
-    <main>
-        <section class="hero" id="home">
-            <div class="hero-content">
-                <p class="eyebrow">
-                    <span class="status-dot"></span>
-                    INSIDE THE BUILDLAB UNIVERSE
-                </p>
-
-                <h1>
-                    More Than a<br>
-                    <span>Community.</span><br>
-                    A Movement.
-                </h1>
-
-                <p class="hero-description">
-                    We bring curious minds, creative thinkers, and problem
-                    solvers together to learn, collaborate, and build
-                    real solutions for a better tomorrow.
-                </p>
-
-                <div class="hero-actions">
-                    <a href="#mission" class="primary-btn">
-                        Discover Our Mission <span>↗</span>
-                    </a>
-
-                    <a href="#story" class="secondary-btn">
-                        <span class="play-icon">▶</span>
-                        Explore Our Story
-                    </a>
-                </div>
-
-                <div class="hero-note">
-                    <span class="note-line"></span>
-                    IMAGINE IT. BUILD IT. IMPACT THE WORLD.
-                </div>
-            </div>
-
-            <div class="universe" aria-hidden="true">
-                <div class="orbit orbit-one"></div>
-                <div class="orbit orbit-two"></div>
-                <div class="planet planet-one"></div>
-                <div class="planet planet-two"></div>
-
-                <div class="portal">
-                    <div class="portal-inner">
-                        <span class="portal-symbol">✳</span>
-                    </div>
-                </div>
-
-                <div class="floating-card code-card">
-                    <span class="card-label">THE PROCESS</span>
-                    <code>&lt;idea /&gt;</code>
-                    <code>&lt;build /&gt;</code>
-                    <code>&lt;impact /&gt;</code>
-                </div>
-
-                <div class="floating-card vision-card">
-                    <span class="vision-icon">✦</span>
-                    <p>Small ideas.</p>
-                    <p><strong>Infinite possibilities.</strong></p>
-                </div>
-
-                <div class="universe-caption">
-                    <span></span> A SPACE FOR WHAT'S NEXT
-                </div>
-            </div>
-
-            <div class="hero-bottom-glow"></div>
-        </section>
-
-        <!-- More sections will be added here -->
-
-        
-<section class="mission-section" id="mission">
-
-    <div class="mission-intro">
-        <p class="section-label">
-            <span>✳</span> WHY WE EXIST
-        </p>
-
-        <h2>
-            Empowering the next<br>
-            generation of <span>builders.</span>
-        </h2>
-
-        <p class="mission-description">
-            BuildLab is where curiosity becomes capability.
-            We create an environment where people learn together,
-            exchange ideas, and turn their skills into meaningful
-            projects that make a difference.
-        </p>
-
-        <a href="#story" class="text-link">
-            Discover our purpose <span>↗</span>
-        </a>
-
-        <div class="mission-decoration">
-            <span class="decoration-line"></span>
-            <p>BETTER DEVELOPERS.<br>BIGGER IMPACT.</p>
+    <main id="main-content">
+      <!--
+        ASSIGNED TEAMMATE:
+        Replace only the placeholder section below with your approved page design.
+        Reuse the shared bl-* classes and CSS variables from css/style.css.
+        Do not delete or rename shared components, and do not edit another page.
+        See SHARED-CSS-GUIDE.md before starting.
+      -->
+      <section class="bl-section">
+        <div class="bl-container">
+          <div class="development-placeholder">
+            <p class="bl-kicker">About BuildLab</p>
+            <p class="development-placeholder__code">BL / IN PROGRESS</p>
+            <h1>The About page is under development.</h1>
+            <p>This page is reserved for the teammate assigned to design and build the BuildLab story.</p>
+            <a class="bl-text-link" href="SHARED-CSS-GUIDE.md">Read the shared CSS guide <span aria-hidden="true">↗</span></a>
+          </div>
         </div>
-    </div>
-
-    <div class="mission-cards">
-
-        <article class="mission-card card-learn">
-            <div class="card-top">
-                <span class="mission-icon">⌘</span>
-                <span class="card-number">01 / 03</span>
-            </div>
-
-            <p class="card-category">GROW YOUR MIND</p>
-
-            <h3>Learn<br>Together.</h3>
-
-            <p class="card-description">
-                Develop practical skills, explore new technologies,
-                and learn from people who are growing alongside you.
-            </p>
-
-            <div class="card-bottom">
-                <span>KNOWLEDGE IS THE START</span>
-                <span class="card-arrow">↗</span>
-            </div>
-        </article>
-
-        <article class="mission-card card-collaborate">
-            <div class="card-top">
-                <span class="mission-icon">◎</span>
-                <span class="card-number">02 / 03</span>
-            </div>
-
-            <p class="card-category">IDEAS MEET PEOPLE</p>
-
-            <h3>Build<br>Together.</h3>
-
-            <p class="card-description">
-                Share ideas, solve problems as a team, and discover
-                how collaboration makes ambitious ideas possible.
-            </p>
-
-            <div class="card-bottom">
-                <span>BETTER, AS A TEAM</span>
-                <span class="card-arrow">↗</span>
-            </div>
-        </article>
-
-        <article class="mission-card card-build">
-            <div class="card-top">
-                <span class="mission-icon">&lt;/&gt;</span>
-                <span class="card-number">03 / 03</span>
-            </div>
-
-            <p class="card-category">MAKE IT REAL</p>
-
-            <h3>Create<br>Impact.</h3>
-
-            <p class="card-description">
-                Turn what you learn into real projects, solve
-                meaningful challenges, and build things that matter.
-            </p>
-
-            <div class="card-bottom">
-                <span>FROM IDEA TO IMPACT</span>
-                <span class="card-arrow">↗</span>
-            </div>
-        </article>
-
-    </div>
-
-</section>
-<!-- More sections will be added here -->
-
-
-<section class="story-section" id="story">
-
-    <div class="story-visual">
-        <div class="story-grid"></div>
-
-        <div class="story-orb orb-outer">
-            <div class="story-orb orb-middle">
-                <div class="story-orb orb-inner">
-                    <span>✳</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="story-label story-label-top">
-            <span class="story-pulse"></span>
-            THE BEGINNING OF SOMETHING
-        </div>
-
-        <div class="story-floating story-float-one">
-            <span>01</span>
-            <p>Imagine</p>
-        </div>
-
-        <div class="story-floating story-float-two">
-            <span>02</span>
-            <p>Experiment</p>
-        </div>
-
-        <div class="story-floating story-float-three">
-            <span>03</span>
-            <p>Create</p>
-        </div>
-
-        <div class="story-coordinate">
-            BL / 001 — THE JOURNEY CONTINUES
-        </div>
-    </div>
-
-    <div class="story-content">
-        <p class="section-label">
-            <span>✳</span> OUR STORY
-        </p>
-
-        <h2>
-            Every great thing<br>
-            starts with an<br>
-            <span>impossible idea.</span>
-        </h2>
-
-        <p class="story-description">
-            The future doesn't build itself. It takes curious minds,
-            brave questions, and people willing to turn possibilities
-            into reality.
-        </p>
-
-        <p class="story-description">
-            BuildLab is a space for that journey. We learn by doing,
-            grow by sharing, and become better builders by creating
-            things that matter — together.
-        </p>
-
-        <div class="story-signature">
-            <span class="signature-symbol">✳</span>
-            <div>
-                <strong>The BuildLab Philosophy</strong>
-                <p>Start curious. Keep building.</p>
-            </div>
-        </div>
-
-        <a href="#home" class="primary-btn story-button">
-            Back to the beginning <span>↑</span>
-        </a>
-    </div>
-
-</section>
-
-<section class="closing-section">
-
-    <div class="closing-orb closing-orb-one"></div>
-    <div class="closing-orb closing-orb-two"></div>
-
-    <p class="section-label">YOUR NEXT CHAPTER STARTS HERE</p>
-
-    <h2>
-        Don't just watch<br>
-        the future. <span>Build it.</span>
-    </h2>
-
-    <p>
-        Bring your curiosity. Find your people.
-        Let's make something meaningful.
-    </p>
-
-    <a href="#mission" class="primary-btn">
-        Explore What We Do <span>↗</span>
-    </a>
-
-    <div class="closing-footer">
-        <a href="#home" class="logo">
-            <span class="logo-symbol">✳</span>
-            BuildLab
-        </a>
-
-        <span>IMAGINE IT. BUILD IT. IMPACT THE WORLD.</span>
-
-        <a href="#home">BACK TO TOP ↑</a>
-    </div>
-
-</section>
-
+      </section>
     </main>
 
-    <script src="script.js"></script>
-</body>
+    <!-- Shared footer: keep this consistent across every page. -->
+    <footer class="bl-footer">
+      <div class="bl-container bl-footer__grid">
+        <div class="bl-footer__brand"><img src="assets/images/BUILD LAB LOGO.png" alt="BuildLab"><p>A practical community for people who make software.</p></div>
+        <div class="bl-footer__links"><p class="bl-footer__label">Explore</p><a href="index.html">Home</a><a href="about.html">About</a><a href="projects.html">Projects</a><a href="team.html">Team</a><a href="join.html">Join</a></div>
+        <div class="bl-footer__cta"><p class="bl-footer__label">Have an idea worth building?</p><a href="join.html">Bring it to the lab <span aria-hidden="true">↗</span></a></div>
+      </div>
+      <div class="bl-container bl-footer__bottom"><span>© 2026 BuildLab.</span><span>Learn Together. Build Together.</span></div>
+    </footer>
+  </body>
 </html>
-

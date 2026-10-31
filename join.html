@@ -3,31 +3,127 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="The BuildLab Join page will be prepared after the team approves the UI/UX design.">
-    <title>Join | BuildLab</title>
+    <meta name="description" content="Join BuildLab to learn with the community, build projects, and share what you’re learning.">
+    <title>Join BuildLab | BuildLab Community</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/join-contributor.css">
     <script src="js/script.js" defer></script>
+    <script src="js/join-contributor.js" defer></script>
   </head>
   <body>
-    <div class="page-shell">
-      <header class="site-header container">
-        <a class="brand" href="index.html" aria-label="BuildLab home">
-          <img src="assets/images/BUILD LAB LOGO.png" alt="BuildLab">
-        </a>
-        <span class="status-label">
-          <span class="status-indicator" aria-hidden="true"></span>
-          Design in progress
-        </span>
+    <div class="page-shell join-shell" id="top">
+      <header class="join-header">
+        <div class="join-width join-header-inner">
+          <a class="join-brand" href="index.html" aria-label="BuildLab home">
+            <img src="assets/images/BUILD LAB LOGO.png" alt="BuildLab — Learn Together. Build Together.">
+          </a>
+          <nav class="join-nav" id="join-navigation" aria-label="Main navigation">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="projects.html">Projects</a>
+            <a href="team.html">Team</a>
+            <a href="join.html" aria-current="page">Join</a>
+          </nav>
+          <button class="join-menu-toggle" type="button" aria-label="Toggle navigation" aria-controls="join-navigation" aria-expanded="false">
+            <span></span>
+            <span></span>
+          </button>
+        </div>
       </header>
-      <main class="container main-content">
-        <section class="placeholder-content" aria-labelledby="page-title">
-          <p class="eyebrow">BuildLab Community Website</p>
-          <h1 id="page-title">Join</h1>
-          <p>This page’s content will be added after the team approves the UI/UX design.</p>
+
+      <main class="join-main" id="main-content">
+        <section class="join-page" aria-labelledby="page-title">
+          <div class="join-width join-grid">
+            <div class="join-copy">
+              <p class="join-eyebrow">Join BuildLab</p>
+              <h1 id="page-title">Bring your curiosity. Leave with momentum.</h1>
+              <p class="join-intro">
+                We welcome thoughtful builders at every stage—from early-career engineers to seasoned technical leads.
+              </p>
+              <ol class="join-steps">
+                <li><span aria-hidden="true">01</span><p>Meet the community</p></li>
+                <li><span aria-hidden="true">02</span><p>Find or propose a build</p></li>
+                <li><span aria-hidden="true">03</span><p>Learn out loud</p></li>
+              </ol>
+            </div>
+
+            <div class="join-card">
+              <form class="application-form" id="join-form">
+                <div class="application-heading">
+                  <p>Application / 2026</p>
+                  <h2>Tell us about you.</h2>
+                </div>
+
+                <div class="application-name-row">
+                  <div class="application-field">
+                    <label for="contact-first-name">First name</label>
+                    <input id="contact-first-name" name="firstName" type="text" autocomplete="given-name" placeholder="Alex" required>
+                  </div>
+                  <div class="application-field">
+                    <label for="contact-last-name">Last name</label>
+                    <input id="contact-last-name" name="lastName" type="text" autocomplete="family-name" placeholder="Morgan" required>
+                  </div>
+                </div>
+                <div class="application-field">
+                  <label for="contact-email">Email address</label>
+                  <input id="contact-email" name="email" type="email" autocomplete="email" placeholder="alex@example.com" required>
+                </div>
+                <div class="application-field">
+                  <label for="contact-role">Your role</label>
+                  <select id="contact-role" name="role" required>
+                    <option value="" selected disabled>Select one</option>
+                    <option value="software-engineer">Software engineer</option>
+                    <option value="designer">Designer</option>
+                    <option value="product-builder">Product builder</option>
+                    <option value="student-early-career">Student / early career</option>
+                    <option value="something-else">Something else</option>
+                  </select>
+                </div>
+                <div class="application-field">
+                  <label for="contact-message">What would you like to build or learn?</label>
+                  <textarea id="contact-message" name="message" rows="4" placeholder="A few sentences is perfect." required></textarea>
+                </div>
+                <button class="application-submit" type="submit">
+                  <span>Send your note</span>
+                  <span aria-hidden="true">↗</span>
+                </button>
+                <p class="application-feedback" id="form-feedback" role="status" aria-live="polite"></p>
+              </form>
+            </div>
+          </div>
         </section>
       </main>
-      <footer class="site-footer container">
-        <p>Built together by the BuildLab community.</p>
+
+      <footer class="join-footer">
+        <div class="join-width join-footer-main">
+          <div class="join-footer-brand">
+            <a class="join-brand" href="index.html" aria-label="BuildLab home">
+              <img src="assets/images/BUILD LAB LOGO.png" alt="BuildLab — Learn Together. Build Together.">
+            </a>
+            <p>A practical community for people who make software.</p>
+          </div>
+          <div class="join-footer-explore">
+            <h2>Explore</h2>
+            <nav aria-label="Footer navigation">
+              <a href="index.html">Home</a>
+              <a href="about.html">About</a>
+              <a href="projects.html">Projects</a>
+              <a href="team.html">Team</a>
+              <a href="join.html" aria-current="page">Join</a>
+            </nav>
+          </div>
+          <div class="join-footer-cta">
+            <p>Have an idea worth building?</p>
+            <a href="#join-form">Bring it to the lab <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+        <div class="join-width join-footer-bottom">
+          <p>© 2026 BuildLab.</p>
+          <p>Learn Together. Build Together.</p>
+        </div>
       </footer>
     </div>
   </body>

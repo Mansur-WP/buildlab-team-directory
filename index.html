@@ -3,51 +3,67 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="The BuildLab Community Website is being prepared while the team finalizes its designs.">
-    <title>BuildLab Community Website | In Development</title>
+    <meta name="description" content="BuildLab is a practical software engineering community where people learn openly and build real products together.">
+    <title>BuildLab — Learn Together. Build Together.</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <script src="js/script.js" defer></script>
   </head>
-  <body>
-    <div class="page-shell">
-      <header class="site-header container">
-        <a class="brand" href="index.html" aria-label="BuildLab home">
-          <img src="assets/images/BUILD LAB LOGO.png" alt="BuildLab">
-        </a>
-        <span class="status-label">
-          <span class="status-indicator" aria-hidden="true"></span>
-          Design in progress
-        </span>
-      </header>
-
-      <main class="container main-content">
-        <section class="welcome-panel" aria-labelledby="welcome-title">
-          <div class="welcome-copy">
-            <p class="eyebrow">BuildLab Community Website</p>
-            <h1>BuildLab</h1>
-            <h2 class="welcome-title" id="welcome-title">Something great is taking shape.</h2>
-            <p class="welcome-message">
-              We’re preparing the BuildLab Community Website. Our team is working together to finalize the designs and build a space for learning, collaboration, and community projects.
-            </p>
-            <p class="approval-note">Full page designs will follow UI/UX approval.</p>
+  <body class="home-page">
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <header class="bl-header">
+      <div class="bl-container bl-header__inner">
+        <a class="bl-logo" href="index.html" aria-label="BuildLab home"><img src="assets/images/BUILD LAB LOGO.png" alt="BuildLab — Learn Together. Build Together."></a>
+        <button class="bl-menu-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation"><span class="sr-only">Open navigation</span><span></span><span></span><span></span></button>
+        <nav class="bl-nav" id="primary-navigation" aria-label="Primary navigation">
+          <a class="bl-nav__link is-active" href="index.html" aria-current="page">Home</a><a class="bl-nav__link" href="about.html">About</a><a class="bl-nav__link" href="projects.html">Projects</a><a class="bl-nav__link" href="team.html">Team</a><a class="bl-nav__link" href="join.html">Join</a><a class="bl-button bl-button--nav" href="join.html">Sign In</a>
+        </nav>
+      </div>
+    </header>
+    <main id="main-content">
+      <section class="bl-hero bl-section">
+        <div class="bl-container bl-hero__grid">
+          <div class="bl-hero__copy">
+            <p class="bl-kicker">Software engineering community</p>
+            <h1>Build boldly.<br>Learn openly.</h1>
+            <p class="bl-hero__tagline">Learn Together. Build Together.</p>
+            <p class="bl-hero__description">A focused space for curious engineers to sharpen their craft, work in the open, and turn ambitious ideas into useful software.</p>
+            <div class="bl-actions"><a class="bl-button bl-button--primary" href="join.html">Join the lab <span aria-hidden="true">↗</span></a><a class="bl-button bl-button--secondary" href="projects.html">Explore projects</a></div>
           </div>
-
-          <div class="welcome-visual" aria-hidden="true">
-            <div class="visual-mark visual-mark-blue"></div>
-            <div class="visual-mark visual-mark-green"></div>
-            <div class="visual-mark visual-mark-navy"></div>
-            <div class="visual-caption">
-              <span>Thoughtful ideas</span>
-              <span class="caption-line"></span>
-              <span>Taking shape together</span>
-            </div>
+          <div class="bl-hero-art" aria-hidden="true">
+            <span class="bl-hero-art__code">BL / 001</span><span class="bl-hero-art__side">Open source / open minds</span>
+            <div class="bl-hero-art__tile bl-hero-art__tile--b"><span>B</span></div><div class="bl-hero-art__tile bl-hero-art__tile--l"><span>L</span></div>
+            <div class="bl-hero-art__axis"><span>Idea</span><i></i><span>Ship</span></div>
           </div>
-        </section>
-      </main>
-
-      <footer class="site-footer container">
-        <p>Built together by the BuildLab community.</p>
-      </footer>
-    </div>
+        </div>
+      </section>
+      <div class="bl-principles" aria-label="BuildLab principles"><div class="bl-container bl-principles__inner"><span>Make real things</span><i aria-hidden="true"></i><span>Share what you learn</span><i aria-hidden="true"></i><span>Help others grow</span></div></div>
+      <section class="bl-section bl-why" aria-labelledby="why-title">
+        <div class="bl-container">
+          <div class="bl-section-heading"><div><p class="bl-kicker">Why BuildLab</p><h2 id="why-title">Learning moves faster<br>when the work is real.</h2></div><p>We create the structure, support, and momentum engineers need to move from “I should build that” to “we shipped it.”</p></div>
+          <div class="bl-value-grid">
+            <article class="bl-value-card"><span class="bl-value-card__number">01</span><h3>Build in public</h3><p>Share the process, not just the polish. Better feedback makes better builders.</p></article>
+            <article class="bl-value-card"><span class="bl-value-card__number">02</span><h3>Learn by doing</h3><p>Work with real constraints, make decisions, and grow through practice.</p></article>
+            <article class="bl-value-card"><span class="bl-value-card__number">03</span><h3>Grow together</h3><p>Find peers who challenge your thinking and champion your progress.</p></article>
+          </div>
+        </div>
+      </section>
+      <section class="bl-section bl-featured" aria-labelledby="featured-title">
+        <div class="bl-container"><article class="bl-feature-card">
+          <div class="bl-feature-card__visual" aria-hidden="true"><span class="bl-feature-card__number">01</span><div class="bl-shape bl-shape--green"></div><div class="bl-shape bl-shape--navy"></div><div class="bl-shape bl-shape--outline"></div></div>
+          <div class="bl-feature-card__content"><p class="bl-kicker">Featured build</p><h2 id="featured-title">Patchwork</h2><p>A visual release-planning workspace helping distributed product teams turn scattered feedback into focused releases.</p><a class="bl-text-link" href="projects.html">See what we’re building <span aria-hidden="true">↗</span></a></div>
+        </article></div>
+      </section>
+    </main>
+    <footer class="bl-footer">
+      <div class="bl-container bl-footer__grid">
+        <div class="bl-footer__brand"><img src="assets/images/BUILD LAB LOGO.png" alt="BuildLab"><p>A practical community for people who make software.</p></div>
+        <div class="bl-footer__links"><p class="bl-footer__label">Explore</p><a href="index.html">Home</a><a href="about.html">About</a><a href="projects.html">Projects</a><a href="team.html">Team</a><a href="join.html">Join</a></div>
+        <div class="bl-footer__cta"><p class="bl-footer__label">Have an idea worth building?</p><a href="join.html">Bring it to the lab <span aria-hidden="true">↗</span></a></div>
+      </div>
+      <div class="bl-container bl-footer__bottom"><span>© 2026 BuildLab.</span><span>Learn Together. Build Together.</span></div>
+    </footer>
   </body>
 </html>
