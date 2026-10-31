@@ -10,7 +10,7 @@ Instead:
 
 1. Reuse the shared class when it already does what you need.
 2. Add a new page-specific class when your page needs something different.
-3. Put page-specific CSS in its own clearly labelled section at the bottom of `css/style.css`.
+3. Put page-specific CSS in a separate page stylesheet such as `css/projects.css`.
 
 ## Shared design tokens
 
@@ -128,7 +128,14 @@ Example:
 </section>
 ```
 
-Add its CSS at the bottom of `css/style.css` in a clearly labelled block:
+Add its CSS to an isolated page file such as `css/projects.css`, loaded after `css/style.css`:
+
+```html
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/projects.css">
+```
+
+Then keep every selector scoped to that page:
 
 ```css
 /* =========================================================
@@ -167,7 +174,7 @@ h1 { font-size: 40px; }
 
 1. Pull the latest team branch before starting.
 2. Create your own feature branch, for example `feature/projects-page`.
-3. Edit only your assigned HTML page and your labelled page-specific CSS section.
+3. Edit only your assigned HTML page and its isolated page stylesheet or script.
 4. Reuse the existing shared header, footer, layout, buttons, variables, and script.
 5. Check your page on desktop and mobile.
 6. Open the other pages and confirm that your CSS did not change them.
